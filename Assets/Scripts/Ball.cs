@@ -6,7 +6,7 @@ using UnityEngine.Events;
 [RequireComponent(typeof(MeshRenderer))]
 public class Ball : PooledObject
 {
-    private float _speed = 1;
+    private float _speed;
     private bool _hit;
     private MeshRenderer _meshRenderer;
     private ParticleSystem _explosion;
@@ -34,8 +34,8 @@ public class Ball : PooledObject
     {
         if (_hit == false)
         {
-            Deactivate();
             BecameInvisible?.Invoke(this);
+            Deactivate();
         }
     }
 

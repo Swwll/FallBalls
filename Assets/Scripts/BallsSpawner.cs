@@ -70,6 +70,7 @@ public class BallsSpawner : MonoBehaviour
     private void OnDeactivated(PooledObject pooledObject)
     {
         pooledObject.Deactivated -= OnDeactivated;
+        BallDeactivated?.Invoke(pooledObject as Ball);
         _objectPool.ReturnObject(pooledObject);
     }
 }
