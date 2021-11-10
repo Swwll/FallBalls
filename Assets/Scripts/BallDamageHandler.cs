@@ -2,8 +2,10 @@ using UnityEngine;
 
 public class BallDamageHandler : MonoBehaviour
 {
-    [SerializeField] private BallsSpawner _ballsSpawner;
-    [SerializeField] private Player _player;
+    [SerializeField] 
+    private BallsSpawner _ballsSpawner;
+    [SerializeField]
+    private Player _player;
 
     private void OnEnable()
     {

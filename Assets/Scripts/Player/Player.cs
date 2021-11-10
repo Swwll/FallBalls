@@ -3,10 +3,14 @@ using UnityEngine.Events;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField] private int _health;
-    [SerializeField] private int _points;
-    [SerializeField] private GameObject _input;
-    [SerializeField] private Raycaster _raycaster;
+    [SerializeField]
+    private int _health;
+    [SerializeField]
+    private int _points;
+    [SerializeField]
+    private GameObject _input;
+    [SerializeField]
+    private Raycaster _raycaster;
 
     public event UnityAction Died;
     public event UnityAction<int> PointsCountChanged;

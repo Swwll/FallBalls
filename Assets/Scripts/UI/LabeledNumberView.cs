@@ -7,7 +7,8 @@ namespace UI
     [RequireComponent(typeof(TextMeshProUGUI))]
     public class LabeledNumberView : MonoBehaviour
     {
-        [SerializeField] private string _stringFormat;
+        [SerializeField]
+        private string _stringFormat;
 
         private TextMeshProUGUI _text;
 

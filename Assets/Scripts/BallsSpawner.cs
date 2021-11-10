@@ -3,14 +3,20 @@ using UnityEngine.Events;
 
 public class BallsSpawner : MonoBehaviour
 {
-    [SerializeField] private Camera _camera;
-    [SerializeField] private Ball _prefab;
-    [SerializeField] private BallsConfiguration _ballsConfiguration;
-    [SerializeField] private float _spawnDelay = 5;
-    [SerializeField] private float _speedIncreaseInMinute;
+    [SerializeField]
+    private Camera _camera;
+    [SerializeField]
+    private Ball _prefab;
+    [SerializeField]
+    private BallsConfiguration _ballsConfiguration;
+    [SerializeField]
+    private float _spawnDelay = 5;
+    [SerializeField]
+    private float _speedIncreaseInMinute;
 
+    private readonly Vector2 _zSpawnOffset = new Vector2(1, 100);
+    
     private ObjectPool<PooledObject> _objectPool;
-    private Vector2 _zSpawnOffset = new Vector2(1, 100);
     private float _timer;
     private float _time;
 

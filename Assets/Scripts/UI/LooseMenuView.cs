@@ -4,10 +4,14 @@ namespace UI
 {
     public class LooseMenuView : MonoBehaviour
     {
-        [SerializeField] private Game _game;
-        [SerializeField] private CanvasGroup _looseMenu;
-        [SerializeField] private LabeledNumberView _score;
-        [SerializeField] private LabeledNumberView _bestScore;
+        [SerializeField]
+        private Game _game;
+        [SerializeField]
+        private CanvasGroup _looseMenu;
+        [SerializeField]
+        private LabeledNumberView _score;
+        [SerializeField]
+        private LabeledNumberView _bestScore;
 
         private void OnEnable()
         {

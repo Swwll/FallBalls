@@ -6,7 +6,8 @@ namespace UI
     [RequireComponent(typeof(TextMeshProUGUI))]
     public class PointsCounter : MonoBehaviour
     {
-        [SerializeField] private Player _player;
+        [SerializeField]
+        private Player _player;
 
         private TextMeshProUGUI _textMesh;
 
